@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yozora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="glyph">夜</div>
+          <div class="name">Yozora<small>夜空</small></div>
+        </div>
+
+        <nav class="side-nav">
+          <button class="side-link active" data-view="home"><span class="ic" data-icon="home"></span> Beranda</button>
+          <button class="side-link" data-view="explore"><span class="ic" data-icon="compass"></span> Jelajahi</button>
+          <button class="side-link" data-view="schedule"><span class="ic" data-icon="calendar"></span> Jadwal Rilis</button>
+          <button class="side-link" data-view="watchlist"><span class="ic" data-icon="star"></span> Koleksi Saya</button>
+          <button class="side-link" data-view="bookmarks"><span class="ic" data-icon="bookmarkStack"></span> Bookmark</button>
+          <button class="side-link" data-view="history"><span class="ic" data-icon="history"></span> Riwayat</button>
+          <div class="side-sep"></div>
+          <button class="side-link" data-view="downloads"><span class="ic" data-icon="download"></span> Download</button>
+          <button class="side-link" data-view="settings"><span class="ic" data-icon="settings"></span> Pengaturan</button>
+        </nav>
+
+        <div class="side-user">
+          <div class="avatar"></div>
+          <div class="uname">Penonton</div>
+        </div>
+      </aside>
+
+      <div class="main-col">
+        <header class="topbar">
+          <form id="search-form" class="search-form">
+            <span class="ic" data-icon="search"></span>
+            <input id="search-input" type="text" placeholder="Cari anime, genre, atau studio…" />
+            <span class="kbd">Ctrl+K</span>
+          </form>
+          <div class="topbar-spacer"></div>
+          <div class="notif-wrap">
+            <button class="bell-btn" id="bell-btn"><span class="ic" data-icon="bell"></span><span class="notif-badge" id="notif-badge" style="display:none">0</span></button>
+            <div class="notif-panel" id="notif-panel" style="display:none"></div>
+          </div>
+        </header>
+
+        <main id="app-main"></main>
+      </div>
+    </div>
+
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
